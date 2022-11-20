@@ -27,7 +27,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 99;
-  background-color: var(--background-color-1);
+  background-color: var(--background-color-2);
 }
 
 #header .img-wrapper {
@@ -59,7 +59,7 @@ a {
 }
 
 #main {
-  padding-top: 50px;
+  padding-top: 80px;
   position: relative;
   z-index: 0;
 }
@@ -188,6 +188,7 @@ a {
   padding: 10px 20px;
   font-size: 1em;
   background-color: var(--button-color);
+  color: black;
   border: none;
 }
 
@@ -234,7 +235,7 @@ a {
     flex-direction: column;
   }
   #main {
-    padding: 157px 20px 0 20px;
+    padding: 207px 20px 0 20px;
   }
 
   #header .img-wrapper {
@@ -274,7 +275,7 @@ a {
   #features {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 70px;
+    padding-top: 150px;
   }
 
   .features__item:last-of-type {
