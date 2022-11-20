@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --button-color: #f1c40e;
+  --background-color-1: #eeeeee;
+  --background-color-2: #dddddd;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+
+body {
+  background-color: var(--background-color-1);
+  margin-bottom: 0;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: var(--background-color-1);
+}
+
+#header .img-wrapper {
+  width: 55%;
+}
+
+#header-img {
+  width: 300px;
+  height: 100%;
+}
+
+header nav {
+  width: 45%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  padding-top: 50px;
+  position: relative;
+  z-index: 0;
+}
+
+#main-header h1 {
+  text-align: center;
+}
+
+#main-header #form {
+  margin: 10px auto;
+}
+
+#main-header #form input {
+  margin: 20px auto;
+  display: block;
+}
+
+#email {
+  width: 280px;
+  height: 30px;
+}
+
+#submit {
+  width: min-content;
+  padding: 7px 10px;
+  height: auto;
+  background-color: var(--button-color);
+  color: black;
+  font-weight: bold;
+  border: none;
+  font-size: 1em;
+}
+
+#features {
+  margin: 0 auto 0 auto;
+  max-width: 1000px;
+  padding: 90px 20px 0 20px;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.pic-wrapper {
+  width: 150px;
+}
+
+.icon {
+  font-size: 64px;
+  color: #ff8c00;
+  margin: 0 auto;
+  display: block;
+  width: min-content;
+}
+
+.features__desc {
+  width: 80%;
+}
+
+.features__desc h2 {
+  margin: 0;
+}
+
+.features__desc p {
+  margin: 5px 0;
+}
+
+#product-video {
+  padding: 60px 0 0 0;
+}
+
+#product-video iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+#pricing {
+  margin: 70px 0;
+}
+
+.pricing-container {
+  display: flex;
+  max-width: 900px;
+  width: 70%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.pricing__item {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#pricing .price,
+#pricing .pricing__header {
+  font-weight: bold;
+}
+
+#pricing .pricing__header {
+  font-size: 1em;
+  width: 100%;
+  background-color: var(--background-color-2);
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#pricing .price {
+  font-size: 1.5em;
+}
+
+#pricing p:not(.price) {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.pricing__select {
+  margin: 30px auto 15px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: var(--button-color);
+  border: none;
+}
+
+#footer {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  text-align: right;
+  background-color: var(--background-color-2);
+  padding: 15px 5px;
+}
+
+#footer ul {
+  list-style: none;
+  margin: 5px 0;
+}
+
+#footer ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+a {
+  color: black;
+}
+
+#footer p {
+  margin: 3px 10px;
+  color: #444;
+  font-size: smaller;
+}
+
+@media (max-width: 800px) {
+  .pricing-container {
+    flex-direction: column;
+    width: 300px;
+  }
+}
+
+@media (max-width: 630px) {
+  #header {
+    flex-direction: column;
+  }
+  #header ul {
+    flex-direction: column;
+  }
+  #main {
+    padding: 157px 20px 0 20px;
+  }
+
+  #header .img-wrapper {
+    width: 100%;
+  }
+
+  #header img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    padding-left: 0;
+  }
+
+  header nav ul li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .pic-wrapper {
+    display: none;
+  }
+
+  .features__desc {
+    width: 100%;
+  }
+
+  #features {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 70px;
+  }
+
+  .features__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  #product-video {
+    padding-top: 140px;
+  }
+
+  #product-video iframe {
+    width: 100%;
+  }
+
+  #pricing {
+    padding-top: 150px;
+    margin-top: 0;
+  }
+}
